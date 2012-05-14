@@ -8,7 +8,7 @@ Usage:
     url = 'http://some.url.com'
     Wappalyzer.new(url).analysis #=> ['Ruby', 'nginx', ...]
 
-It is a fork of https://github.com/ElbertF/Wappalyzer.
+It is a fork of https://github.com/ElbertF/Wappalyzer (commit 7431c5e1e1).
 
 TODO
 ----
