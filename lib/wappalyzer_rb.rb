@@ -13,6 +13,13 @@ module WappalyzerRb
       analyze!
     end
 
+    def self.get(url)
+      uri = URI.parse(url)
+      http = Net::HTTP.new(uri.host, uri.port)
+      request = Net::HTTP::Get.new(uri.request_uri)
+      http.request(request)
+    end
+
     private
 
     def hostname
@@ -49,12 +56,22 @@ module WappalyzerRb
       response
     end
 
-    def response
+    def response(url = nil)
       @response ||= begin
-        uri = URI.parse(@url)
-        http = Net::HTTP.new(uri.host, uri.port)
-        request = Net::HTTP::Get.new(uri.request_uri)
-        http.request(request)
+        url ||= @url
+        resp = WappalyzerRb::Detector.get(url)
+
+        redirects = 0
+        while resp.code == "302" && resp["location"] # redirect
+          raise 'Too many redirects' if redirects > 10
+
+          url = resp["location"]
+          redirects += 1
+
+          resp = WappalyzerRb::Detector.get(url)
+        end
+
+        resp
       end
     end
 
