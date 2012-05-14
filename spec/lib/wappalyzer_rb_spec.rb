@@ -1,12 +1,12 @@
 require 'spec_helper'
 
-describe WappalyzerRb::Some do
+describe WappalyzerRb::Detector do
   let(:mock_response) do
     mock(:response, body: "nobody", :[] => nil)
   end
 
   it "should initialize" do
-    WappalyzerRb::Some.any_instance.stub(:response).and_return(mock_response)
-    WappalyzerRb::Some.new('http://someurl.com')
+    WappalyzerRb::Detector.any_instance.stub(:response).and_return(mock_response)
+    WappalyzerRb::Detector.new('http://someurl.com')
   end
 end

@@ -2,7 +2,7 @@ require "wappalyzer_rb/version"
 require "wappalyzer_rb/apps"
 
 module WappalyzerRb
-  class Some
+  class Detector
     attr_reader :analysis
 
     def initialize(url)
