@@ -14,7 +14,7 @@ TODO
 ----
 
 * Write a script to automatically translate apps.js to a ruby config file
- 
+
 DONE
 ----
 
@@ -24,5 +24,5 @@ DONE
 LINKS
 -----
 
-Rubygems (the gem): https://rubygems.org/gems/wappalyzer_rb
-Github (source): https://github.com/vrinek/wappalyzer-ruby
+* Rubygems (the gem): https://rubygems.org/gems/wappalyzer_rb
+* Github (source): https://github.com/vrinek/wappalyzer-ruby
