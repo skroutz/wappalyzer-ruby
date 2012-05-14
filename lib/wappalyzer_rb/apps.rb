@@ -267,6 +267,7 @@ module WappalyzerRb
     'Site Meter' =>                       { cats: [ 10 ], script: /sitemeter.com\/js\/counter\.js\?site=/ },
     'SiteCatalyst' =>                     { cats: [ 10 ], html: /var s_code=s\.t\(\);if\(s_code\)document\.write\(s_code\)/i, env: /^s_account$/ },
     'SiteEdit' =>                         { cats: [  1 ], meta: { 'generator' => /SiteEdit/i } },
+    'Skroutzstore' =>                     { cats: [  6 ], meta: { 'author' => /www\.skroutz(store)?\.gr/ }, url: /skroutzstore\.gr/, html: /http:\/\/(www\.)?skroutzstore\.gr/ },
     'Smartstore' =>                       { cats: [  6 ], script: /smjslib\.js/ },
     'SMF' =>                              { cats: [  2 ], html: /<script [^>]+\s+var smf_/i, env: /^smf_/ },
     'sNews' =>                            { cats: [  1 ], meta: { 'generator' => /sNews/ } },
