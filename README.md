@@ -13,6 +13,7 @@ It is a fork of https://github.com/ElbertF/Wappalyzer (commit 7431c5e1e1).
 TODO
 ----
 
+* Implement `implies` rule
 * Write a script to automatically translate apps.js to a ruby config file
 
 DONE
