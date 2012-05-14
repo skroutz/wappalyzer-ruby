@@ -24,5 +24,5 @@ DONE
 LINKS
 -----
 
-Rubygems (the gem): https://rubygems.org/gems/wappalyzer_rb
-Github (source): https://github.com/vrinek/wappalyzer-ruby
+* Rubygems (the gem): https://rubygems.org/gems/wappalyzer_rb
+* Github (source): https://github.com/vrinek/wappalyzer-ruby
