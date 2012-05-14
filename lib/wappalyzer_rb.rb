@@ -1,6 +1,9 @@
 require "wappalyzer_rb/version"
 require "wappalyzer_rb/apps"
 
+require "uri"
+require "net/http"
+
 module WappalyzerRb
   class Detector
     attr_reader :analysis
