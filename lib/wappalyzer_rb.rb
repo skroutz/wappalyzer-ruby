@@ -1,4 +1,6 @@
-class Wappalyzer
+require "wappalyzer_rb/version"
+
+class WappalyzerRb
   CATEGORIES = [
     'cms',
     'message-boards',
