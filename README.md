@@ -6,7 +6,7 @@ Analyzes a provided url and returns any services it can detect.
 Usage:
 
     url = 'http://some.url.com'
-    WappalyzerRb.new(url).analysis #=> ['Ruby', 'nginx', ...]
+    WappalyzerRb::Detector.new(url).analysis #=> ['Ruby', 'nginx', ...]
 
 It is a fork of https://github.com/ElbertF/Wappalyzer (commit 7431c5e1e1).
 
