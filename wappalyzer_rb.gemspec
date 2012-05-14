@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Kostas Karachalios"]
   s.email       = ["kostas.karachalios@me.com"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{Analyzes a provided url and returns any services it can detect}
+  s.description = %q{This is merely a port of the javascript parts of Wappalyzer extension for Firefox and Chrome}
 
   s.rubyforge_project = "wappalyzer_rb"
 
