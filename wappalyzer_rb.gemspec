@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = WappalyzerRb::VERSION
   s.authors     = ["Kostas Karachalios"]
   s.email       = ["kostas.karachalios@me.com"]
-  s.homepage    = ""
+  s.homepage    = "https://github.com/vrinek/wappalyzer-ruby"
   s.summary     = %q{Analyzes a provided url and returns any services it can detect}
   s.description = %q{This is merely a port of the javascript parts of Wappalyzer extension for Firefox and Chrome}
 
