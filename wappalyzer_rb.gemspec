@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.email       = ["kostas.karachalios@me.com"]
   s.homepage    = "https://github.com/vrinek/wappalyzer-ruby"
   s.summary     = %q{Analyzes a provided url and returns any services it can detect}
-  s.description = %q{This is merely a port of the javascript parts of Wappalyzer extension for Firefox and Chrome}
+  s.description = %q{This is merely a port of the javascript parts of Wappalyzer extension for Firefox and Chrome. It analyzes a url and tries to guess what software it uses (like server software, CMS, framework, programming language).}
 
   s.rubyforge_project = "wappalyzer_rb"
 
