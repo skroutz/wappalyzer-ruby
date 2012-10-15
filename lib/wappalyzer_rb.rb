@@ -14,10 +14,22 @@ module WappalyzerRb
     end
 
     def self.get(url)
-      uri = URI.parse(url)
-      http = Net::HTTP.new(uri.host, uri.port)
-      request = Net::HTTP::Get.new(uri.request_uri)
-      http.request(request)
+      #TODO We could test with https too
+      if url.match(/^http/)
+        correct_url = url
+      else
+        correct_url = "http://#{url}"
+      end
+
+      uri = URI.parse(correct_url)
+
+      if uri.respond_to? 'request_uri'
+        http = Net::HTTP.new(uri.host, uri.port)
+        request = Net::HTTP::Get.new(uri.request_uri)
+        http.request(request)
+      else
+        puts "Incorrect URI"
+      end
     end
 
     private
@@ -60,6 +72,10 @@ module WappalyzerRb
       @response ||= begin
         url ||= @url
         resp = WappalyzerRb::Detector.get(url)
+
+        if resp.nil?
+          Process.exit
+        end
 
         redirects = 0
         while resp.code == "302" && resp["location"] # redirect
