@@ -200,7 +200,6 @@ module WappalyzerRb
     'MooTools' =>                         { cats: [ 12 ], script: /mootools.*\.js/, env: /^MooTools$/ },
     'Movable Type' =>                     { cats: [  1 ], meta: { 'generator' => /Movable Type/i } },
     'Mustache' =>                         { cats: [ 12 ], env: /^Mustache$/ },
-    'Hiawatha' =>                         { cats: [ 22 ], headers: { 'Server' => /Hiawatha/i } },
     'MyBB' =>                             { cats: [  2 ], html: /(<script [^>]+\s+<!--\s+lang\.no_new_posts|<a[^>]* title=("|')Powered By MyBB)/i, env: /^MyBB/ },
     'MyBlogLog' =>                        { cats: [  5 ], script: /pub\.mybloglog\.com/i },
     'Mynetcap' =>                         { cats: [  1 ], meta: { 'generator' => /Mynetcap/i } },
